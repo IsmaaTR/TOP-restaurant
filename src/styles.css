@@ -1,6 +1,34 @@
-#description {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --sage-color: #706D54;
+    --brown-color: #A08963;
+    --light-brown-color: #C9B194;
+    --grey-color: #DBDBDB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--brown-color);
     display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 header nav{
@@ -9,6 +37,47 @@ header nav{
     gap: 10px;
 }
 
+nav button {
+    padding: 10px 20px;
+    background-color: var(--sage-color);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+nav button:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.63);
+}
+
 h1 {
     margin-left: 20px;
+}
+
+#content {
+    background-color: var(--sage-color);
+    padding: 50px;
+    color: white;
+}
+
+#content h1 {
+    text-align: center;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#github-logo {
+    height: 30px;
+    padding-left: 10px;
 }
