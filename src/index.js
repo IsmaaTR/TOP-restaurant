@@ -1,3 +1,4 @@
-import "./styles.css"
+import "./styles.css";
+import { UIModule } from "./UIModule.js"
 
-console.log('Index.js working 2!');
+UIModule.init();
