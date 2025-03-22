@@ -1,5 +1,6 @@
 import "./styles.css";
 import { homeModule } from "./home.js";
+import { menuModule } from "./menu.js";
 
 const mainModule = (function() {
     const contentDiv = document.querySelector('#content');
@@ -9,7 +10,7 @@ const mainModule = (function() {
 
     function init() {
         setListeners();
-        //homeModule.init();
+        homeModule.init();
     }
 
     function cleanContent() {
@@ -24,6 +25,7 @@ const mainModule = (function() {
 
         menuButton.addEventListener('click', () => {
             cleanContent();
+            menuModule.init();
         });
 
         contactButton.addEventListener('click', () => {

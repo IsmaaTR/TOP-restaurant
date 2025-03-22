@@ -17,6 +17,7 @@ body {
     background-color: var(--brown-color);
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 header {
@@ -56,9 +57,14 @@ h1 {
 }
 
 #content {
+    flex-grow: 1;
     background-color: var(--sage-color);
     padding: 50px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #content h1 {
@@ -68,6 +74,20 @@ h1 {
 #home {
     display: flex;
     align-items: center;
+}
+
+#menu {
+    width: 30%;
+    margin-top: 20px;
+    padding: 20px;
+    border: solid var(--grey-color);
+    border-radius: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 #footer {
