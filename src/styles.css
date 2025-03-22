@@ -42,7 +42,7 @@ nav button {
     padding: 10px 20px;
     background-color: var(--sage-color);
     border-radius: 10px;
-    color: white;
+    color: var(--grey-color);
     border: none;
     cursor: pointer;
     transition: all 0.1s ease;
@@ -60,11 +60,10 @@ h1 {
     flex-grow: 1;
     background-color: var(--sage-color);
     padding: 50px;
-    color: white;
+    color: var(--grey-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 #content h1 {
@@ -76,12 +75,20 @@ h1 {
     align-items: center;
 }
 
-#menu {
-    width: 30%;
+#menu,
+.contact-item {
     margin-top: 20px;
     padding: 20px;
     border: solid var(--grey-color);
     border-radius: 20px;
+}
+
+#menu {
+    width: 30%;
+}
+
+.contact-item p {
+    margin: 5px;
 }
 
 .menu-item {

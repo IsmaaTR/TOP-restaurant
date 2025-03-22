@@ -1,6 +1,7 @@
 import "./styles.css";
 import { homeModule } from "./home.js";
 import { menuModule } from "./menu.js";
+import { contactModule } from "./contact.js";
 
 const mainModule = (function() {
     const contentDiv = document.querySelector('#content');
@@ -30,6 +31,7 @@ const mainModule = (function() {
 
         contactButton.addEventListener('click', () => {
             cleanContent();
+            contactModule.init();
         });
     }
 
